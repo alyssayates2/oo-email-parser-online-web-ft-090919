@@ -7,12 +7,10 @@ class EmailParser
 
 	def parse
 		@emails = @emails.gsub(/[\s,]/ ," ").split
-		puts splitEmail = emails.split.collect {|address| address.split(',')} 
+		puts splitEmail = emails.split.collect {|address| address.split(',')}
   returnArr = splitEmail.flatten.uniq
   returnArr# @email is an array now
 		@emails.uniq
 	end
 
 end
-
-
